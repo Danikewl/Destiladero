@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- inicio info para el navegador -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css"
+        integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w=="
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- PhosphorIcons CDN for web -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+    <!-- PhosphorIcons CDN WebComponents -->
+    <script type="module" src="https://unpkg.com/@phosphor-icons/webcomponents@2.0.5"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Poppins:wght@300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Destiladero | Vinos y Espumantes</title>
+</head>
+<!-- fin info para el navegador -->
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="container-fluid px-0">
+                <div class="nav1 d-flex align-items-center justify-content-between">
+                    <a href="./index.html">
+                        <img class="justify-content-start" src="./assets/img/destiladero.gif" alt="logo-destiladero">
+                    </a>
+                    <div class="container d-none d-xl-block d-xl-flex align-items-center justify-content-start">
+                        <input class="form-control-lg" placeholder="Encuentra tus productos..." type="search">
+                        <button>
+                            <a href="">
+                                <i class="ph-bold ph-magnifying-glass"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="iconos d-flex align-items-center justify-content-start">
+                        <a href="./index.html">
+                            <i class="d-none ms-sm-3 d-sm-block ph-bold ph-house-simple"></i>
+                        </a>
+                        <a href="">
+                            <i class="ph-bold ms-sm-3 ph-user"></i>
+                        </a>
+                        <a href="">
+                            <i class="d-none ms-sm-3 d-sm-block ph-bold ph-moped"></i>
+                        </a>
+                        <a href="./carrito.html">
+                            <i class="ph-bold ms-sm-3 ph-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav2 navbar navbar-expand-xl justify-content-between px-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex d-xl-none col-9 col-sm-8 col-xs-11 ps-2">
+                        <input class="form-control-lg" placeholder="Encuentra tus productos..." type="search">
+                        <button>
+                            <a href="">
+                                <i class="ph-bold ph-magnifying-glass"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul
+                            class="container-fluid navbar-nav d-flex align-items-xl-center justify-content-between mt-3 mb-3">
+                            <li class="py-2 pb-sm-4 pb-xl-0 nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-offset="-20,30"> PROMOCIONES </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./promociones-packs.html">Packs</a></li>
+                                    <li><a class="dropdown-item" href="./promociones-whisky.html">Promociones Whisky</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./promociones-dclub.html">Promociones D-Club</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 ">
+                                <a href="./cervezas.html">CERVEZAS</a>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 ">
+                                <a href="./vinos.html">VINOS Y ESPUMANTES</a>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 ">
+                                <a href="./licores.html">LICORES Y CÓCTEL</a>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 ">
+                                <a href="./pisco.html">PISCO</a>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 ">
+                                <a href="./whisky.html">WHISKY</a>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-offset="-20,30"> AGUAS, JUGOS Y BEBIDAS </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./aguas.html">Aguas</a></li>
+                                    <li><a class="dropdown-item" href="./jugos.html">Jugos</a></li>
+                                    <li><a class="dropdown-item" href="./bebidas.html">Bebidas</a></li>
+                                </ul>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 ">
+                                <a href="./tabaqueria.html">TABAQUERÍA</a>
+                            </li>
+                            <li class="py-2 pb-sm-4 pb-xl-0 nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" data-bs-offset="20,30"> OTROS </a>
+                                <ul class="dropdown-menu dropdown-menu-end text-end">
+                                    <li><a class="dropdown-item" href="./hielo.html">Hielo</a></li>
+                                    <li><a class="dropdown-item" href="./snacks.html">Snacks</a></li>
+                                    <li><a class="dropdown-item" href="./condones.html">Condones</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="categoria">
+            <div class="container py-3">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Vinos y Espumantes</li>
+                    </ol>
+                </nav>
+                <div class="titulos-cat">
+                    <h1>Vinos y Espumantes</h1>
+                </div>
+        </section>
+        <div class="container d-flex flex-row">
+            <section id="filtro" class="col-lg-3 d-none d-lg-block">
+                <div class="container px-0">
+                    <div>
+                        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne"> SUB CATEGORÍA </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div>Whisky</div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree"> RANGO DE
+                                        PRECIO </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body d-flex flex-column align-items-center">
+                                        <div class="slidecontainer container-fluid">
+                                            <input class="w-100" type="range" min="1000" max="30000" value="5000"
+                                                class="slider" id="myRange">
+                                            <div class="d-flex justify-content-between">
+                                                <p>$<span id="demo"></span></p>
+                                                <p>$30000<span id="demo"></span></p>
+                                            </div>
+                                        </div>
+                                        <button class="boton">Aplicar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne"> MARCA </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label"
+                                                    for="flexCheckDefault">Ballantine</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Chivas
+                                                    Regal</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Jack
+                                                    Daniel's</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Jhonnie
+                                                    Walker</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Pipers</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">Sandy</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne"> FORMATO </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">750
+                                                    CC</label>
+                                            </div>
+                                            <div class="badge">20</div>
+                                        </div>
+                                        <div class="container d-flex justify-content-between align-items-center">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">1 LT</label>
+                                            </div>
+                                            <span class="badge">20</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="productos" class="col-lg-9 col-xs-12">
+                <div class="container-fluid">
+                    <div id="filtros-mobile" class="col-12 d-block d-lg-none">
+                        <div class="row d-flex flex-row">
+                            <div class="contenedor-filtros col-6 d-flex justify-content-center">
+                                <div class="filtro-sm  d-flex align-items-center">
+                                    <h5>Filtrar</h5>
+                                    <i class="ph-bold  ph-sliders-horizontal"></i>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex justify-content-center">
+                                <div class="orden-sm d-flex align-items-center">
+                                    <h5>Ordenar</h5>
+                                    <i class="ph-bold ph-arrows-down-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column d-none d-sm-none d-md-none d-lg-block">
+                        <div class="barra-orden d-flex justify-content-end align-items-center mb-3">
+                            <div class="orden d-flex align-items-center">
+                                <div>Ordenar por:</div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-sm" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false"> Más populares </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Más Populares</a></li>
+                                        <li><a class="dropdown-item" href="#">Menor Precio</a></li>
+                                        <li><a class="dropdown-item" href="#">Mayor Precio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="orden d-flex align-items-center">
+                                <div>Mostrar por:</div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle btn-sm" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false"> Lista </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Lista</a></li>
+                                        <li><a class="dropdown-item" href="#">Cuadrícula</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cards-container" class="container-fluid">
+                        <div class="d-flex row flex-row justify-content-between">
+                            <div class="col-xl-4  col-lg-6  col-xs-12 my-2">
+                                <div class="carta-producto">
+                                    <div class="imagen">
+                                        <div class="badge-carta d-flex align-items-center">
+                                            <h5>D-PROMO</h5>
+                                        </div>
+                                        <img src="./assets/img/fotos_productos/absolut-vodka.png" class="card-img-top"
+                                            alt="...">
+                                    </div>
+                                    <div class="interior-carta">
+                                        <h4>Absolut Vodka</h4>
+                                        <h6>Botella | 750CC</h6>
+                                        <div class="caja-dclub d-flex align-items-baseline">
+                                            <div class="porcentaje-club">
+                                                <h5>-20%</h5>
+                                            </div>
+                                            <div class="precio">
+                                                <p>$19.990</p>
+                                            </div>
+                                            <div class="porcentaje-club">
+                                                <h5>D<span>Club</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="sin-club d-flex align-items-baseline">
+                                            <div class="porcentaje-sinclub">
+                                                <h5>-10%</h5>
+                                            </div>
+                                            <div class="precio2">
+                                                <p>$20.990</p>
+                                            </div>
+                                        </div>
+                                        <div class="precio-referencia">
+                                            <p>Ref: $25.990</p>
+                                        </div>
+                                        <div
+                                            class="cantidad-productos d-flex align-items-center justify-content-between justify-content-xl-start justify-content-xxl-between flex-xl-wrap flex-xx-n">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-xl-3 mb-xxl-0">
+                                                <button
+                                                    class="boton-outline d-flex align-items-center justify-content-center ms-0 me-2">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <div class="me-2">
+                                                    <p>1</p>
+                                                </div>
+                                                <button class="boton-outline d-flex align-items-center me-2 me-xl-0">
+                                                    <i class="ph-bold ph-plus"></i>
+                                            </div>
+                                            </button>
+                                            <div class="añadir  col-xl-12 col-xxl-6">
+                                                <button
+                                                    class="boton d-flex align-items-xl-center justify-content-center container">Añadir
+                                                    <i class="ph-bold ph-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-lg-6  col-xs-12 my-2">
+                                <div class="carta-producto">
+                                    <div class="imagen">
+                                        <div class="badge-carta d-flex align-items-center">
+                                            <h5>D-PROMO</h5>
+                                        </div>
+                                        <img src="./assets/img/fotos_productos/absolut-vodka.png" class="card-img-top"
+                                            alt="...">
+                                    </div>
+                                    <div class="interior-carta">
+                                        <h4>Absolut Vodka</h4>
+                                        <h6>Botella | 750CC</h6>
+                                        <div class="caja-dclub d-flex align-items-baseline">
+                                            <div class="porcentaje-club">
+                                                <h5>-20%</h5>
+                                            </div>
+                                            <div class="precio">
+                                                <p>$19.990</p>
+                                            </div>
+                                            <div class="porcentaje-club">
+                                                <h5>D<span>Club</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="sin-club d-flex align-items-baseline">
+                                            <div class="porcentaje-sinclub">
+                                                <h5>-10%</h5>
+                                            </div>
+                                            <div class="precio2">
+                                                <p>$20.990</p>
+                                            </div>
+                                        </div>
+                                        <div class="precio-referencia">
+                                            <p>Ref: $25.990</p>
+                                        </div>
+                                        <div
+                                            class="cantidad-productos d-flex align-items-center justify-content-between justify-content-xl-start justify-content-xxl-between flex-xl-wrap flex-xx-n">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-xl-3 mb-xxl-0">
+                                                <button
+                                                    class="boton-outline d-flex align-items-center justify-content-center ms-0 me-2">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <div class="me-2">
+                                                    <p>1</p>
+                                                </div>
+                                                <button class="boton-outline d-flex align-items-center me-2 me-xl-0">
+                                                    <i class="ph-bold ph-plus"></i>
+                                            </div>
+                                            </button>
+                                            <div class="añadir  col-xl-12 col-xxl-6">
+                                                <button
+                                                    class="boton d-flex align-items-xl-center justify-content-center container">Añadir
+                                                    <i class="ph-bold ph-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-lg-6  col-xs-12 my-2">
+                                <div class="carta-producto">
+                                    <div class="imagen">
+                                        <div class="badge-carta d-flex align-items-center">
+                                            <h5>D-PROMO</h5>
+                                        </div>
+                                        <img src="./assets/img/fotos_productos/absolut-vodka.png" class="card-img-top"
+                                            alt="...">
+                                    </div>
+                                    <div class="interior-carta">
+                                        <h4>Absolut Vodka</h4>
+                                        <h6>Botella | 750CC</h6>
+                                        <div class="caja-dclub d-flex align-items-baseline">
+                                            <div class="porcentaje-club">
+                                                <h5>-20%</h5>
+                                            </div>
+                                            <div class="precio">
+                                                <p>$19.990</p>
+                                            </div>
+                                            <div class="porcentaje-club">
+                                                <h5>D<span>Club</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="sin-club d-flex align-items-baseline">
+                                            <div class="porcentaje-sinclub">
+                                                <h5>-10%</h5>
+                                            </div>
+                                            <div class="precio2">
+                                                <p>$20.990</p>
+                                            </div>
+                                        </div>
+                                        <div class="precio-referencia">
+                                            <p>Ref: $25.990</p>
+                                        </div>
+                                        <div
+                                            class="cantidad-productos d-flex align-items-center justify-content-between justify-content-xl-start justify-content-xxl-between flex-xl-wrap flex-xx-n">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-xl-3 mb-xxl-0">
+                                                <button
+                                                    class="boton-outline d-flex align-items-center justify-content-center ms-0 me-2">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <div class="me-2">
+                                                    <p>1</p>
+                                                </div>
+                                                <button class="boton-outline d-flex align-items-center me-2 me-xl-0">
+                                                    <i class="ph-bold ph-plus"></i>
+                                            </div>
+                                            </button>
+                                            <div class="añadir  col-xl-12 col-xxl-6">
+                                                <button
+                                                    class="boton d-flex align-items-xl-center justify-content-center container">Añadir
+                                                    <i class="ph-bold ph-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-lg-6  col-xs-12 my-2">
+                                <div class="carta-producto">
+                                    <div class="imagen">
+                                        <div class="badge-carta d-flex align-items-center">
+                                            <h5>D-PROMO</h5>
+                                        </div>
+                                        <img src="./assets/img/fotos_productos/absolut-vodka.png" class="card-img-top"
+                                            alt="...">
+                                    </div>
+                                    <div class="interior-carta">
+                                        <h4>Absolut Vodka</h4>
+                                        <h6>Botella | 750CC</h6>
+                                        <div class="caja-dclub d-flex align-items-baseline">
+                                            <div class="porcentaje-club">
+                                                <h5>-20%</h5>
+                                            </div>
+                                            <div class="precio">
+                                                <p>$19.990</p>
+                                            </div>
+                                            <div class="porcentaje-club">
+                                                <h5>D<span>Club</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="sin-club d-flex align-items-baseline">
+                                            <div class="porcentaje-sinclub">
+                                                <h5>-10%</h5>
+                                            </div>
+                                            <div class="precio2">
+                                                <p>$20.990</p>
+                                            </div>
+                                        </div>
+                                        <div class="precio-referencia">
+                                            <p>Ref: $25.990</p>
+                                        </div>
+                                        <div
+                                            class="cantidad-productos d-flex align-items-center justify-content-between justify-content-xl-start justify-content-xxl-between flex-xl-wrap flex-xx-n">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-xl-3 mb-xxl-0">
+                                                <button
+                                                    class="boton-outline d-flex align-items-center justify-content-center ms-0 me-2">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <div class="me-2">
+                                                    <p>1</p>
+                                                </div>
+                                                <button class="boton-outline d-flex align-items-center me-2 me-xl-0">
+                                                    <i class="ph-bold ph-plus"></i>
+                                            </div>
+                                            </button>
+                                            <div class="añadir  col-xl-12 col-xxl-6">
+                                                <button
+                                                    class="boton d-flex align-items-xl-center justify-content-center container">Añadir
+                                                    <i class="ph-bold ph-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-lg-6  col-xs-12 my-2">
+                                <div class="carta-producto">
+                                    <div class="imagen">
+                                        <div class="badge-carta d-flex align-items-center">
+                                            <h5>D-PROMO</h5>
+                                        </div>
+                                        <img src="./assets/img/fotos_productos/absolut-vodka.png" class="card-img-top"
+                                            alt="...">
+                                    </div>
+                                    <div class="interior-carta">
+                                        <h4>Absolut Vodka</h4>
+                                        <h6>Botella | 750CC</h6>
+                                        <div class="caja-dclub d-flex align-items-baseline">
+                                            <div class="porcentaje-club">
+                                                <h5>-20%</h5>
+                                            </div>
+                                            <div class="precio">
+                                                <p>$19.990</p>
+                                            </div>
+                                            <div class="porcentaje-club">
+                                                <h5>D<span>Club</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="sin-club d-flex align-items-baseline">
+                                            <div class="porcentaje-sinclub">
+                                                <h5>-10%</h5>
+                                            </div>
+                                            <div class="precio2">
+                                                <p>$20.990</p>
+                                            </div>
+                                        </div>
+                                        <div class="precio-referencia">
+                                            <p>Ref: $25.990</p>
+                                        </div>
+                                        <div
+                                            class="cantidad-productos d-flex align-items-center justify-content-between justify-content-xl-start justify-content-xxl-between flex-xl-wrap flex-xx-n">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-xl-3 mb-xxl-0">
+                                                <button
+                                                    class="boton-outline d-flex align-items-center justify-content-center ms-0 me-2">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <div class="me-2">
+                                                    <p>1</p>
+                                                </div>
+                                                <button class="boton-outline d-flex align-items-center me-2 me-xl-0">
+                                                    <i class="ph-bold ph-plus"></i>
+                                            </div>
+                                            </button>
+                                            <div class="añadir  col-xl-12 col-xxl-6">
+                                                <button
+                                                    class="boton d-flex align-items-xl-center justify-content-center container">Añadir
+                                                    <i class="ph-bold ph-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4  col-lg-6  col-xs-12 my-2">
+                                <div class="carta-producto">
+                                    <div class="imagen">
+                                        <div class="badge-carta d-flex align-items-center">
+                                            <h5>D-PROMO</h5>
+                                        </div>
+                                        <img src="./assets/img/fotos_productos/absolut-vodka.png" class="card-img-top"
+                                            alt="...">
+                                    </div>
+                                    <div class="interior-carta">
+                                        <h4>Absolut Vodka</h4>
+                                        <h6>Botella | 750CC</h6>
+                                        <div class="caja-dclub d-flex align-items-baseline">
+                                            <div class="porcentaje-club">
+                                                <h5>-20%</h5>
+                                            </div>
+                                            <div class="precio">
+                                                <p>$19.990</p>
+                                            </div>
+                                            <div class="porcentaje-club">
+                                                <h5>D<span>Club</span></h5>
+                                            </div>
+                                        </div>
+                                        <div class="sin-club d-flex align-items-baseline">
+                                            <div class="porcentaje-sinclub">
+                                                <h5>-10%</h5>
+                                            </div>
+                                            <div class="precio2">
+                                                <p>$20.990</p>
+                                            </div>
+                                        </div>
+                                        <div class="precio-referencia">
+                                            <p>Ref: $25.990</p>
+                                        </div>
+                                        <div
+                                            class="cantidad-productos d-flex align-items-center justify-content-between justify-content-xl-start justify-content-xxl-between flex-xl-wrap flex-xx-n">
+                                            <div
+                                                class="d-flex align-items-center justify-content-between mb-xl-3 mb-xxl-0">
+                                                <button
+                                                    class="boton-outline d-flex align-items-center justify-content-center ms-0 me-2">
+                                                    <i class="ph-bold ph-minus"></i>
+                                                </button>
+                                                <div class="me-2">
+                                                    <p>1</p>
+                                                </div>
+                                                <button class="boton-outline d-flex align-items-center me-2 me-xl-0">
+                                                    <i class="ph-bold ph-plus"></i>
+                                            </div>
+                                            </button>
+                                            <div class="añadir  col-xl-12 col-xxl-6">
+                                                <button
+                                                    class="boton d-flex align-items-xl-center justify-content-center container">Añadir
+                                                    <i class="ph-bold ph-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section>
+            <div class="container  my-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end me-3">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="darky page-link borde" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link borde" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link borde" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <div class="container-fluid mx-0 px-0">
+        <div class="wave my-0 py-0"></div>
+    </div>
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer  col-sm-12 col-md-12 col-lg-3 col-xl-4 gx-0">
+                <div class="footer_logo">
+                    <img class="justify-content-start" src="./assets/img/destiladero.gif" alt="logo-destiladero">
+                </div>
+                <div class="contacto">
+                    <ul>
+                        <li>
+                            <ph-clock weight="regular" color="currentColor" size="1.4em"></ph-clock>
+                            <p>Lunes a Domingo - 24 hrs.</p>
+                        </li>
+                        <li>
+                            <ph-map-pin weight="regular" color="currentColor" size="1.4em"></ph-map-pin>
+                            <p><a href="https://goo.gl/maps/jXLAsZZj48eAZbLq6" target="_blank">Avda. Valparaíso
+                                    #1149, Villa Alemana</a></p>
+                        </li>
+                        <li>
+                            <ph-phone weight="regular" color="currentColor" size="1.4em"></ph-phone>
+                            <p><a href="tel:+56994397841">+569 9439 7841</a></p>
+                        </li>
+                        <li>
+                            <ph-envelope weight="regular" color="currentColor" size="1.4em"></ph-envelope>
+                            <p><a href="mailto:ventas@destiladero.cl" target="_blank">ventas@destiladero.cl</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="footer-space-between col-md-12 col-lg-8 offset-lg-1 col-xl-8 offset-xl-0 col-xxl-7 offset-xxl-1 py-sm-0 py-lg-5 py-xl-5 py-xxl-5">
+                <div class="box__footer">
+                    <h2>Mapa de Sitio</h2>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sigue tu Pedido</a></li>
+                        <li><a href="#">Mi Cuenta</a></li>
+                        <li><a href="#">Beneficios DestiClub</a></li>
+                    </ul>
+                </div>
+                <div class="box__footer-container">
+                    <div class="box__footer">
+                        <h2>Información</h2>
+                        <ul>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                            <li><a href="#">Políticas de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="rrss__footer">
+                        <h2>Síguenos</h2>
+                        <ul>
+                            <li><a href="#"><ph-facebook-logo weight="regular" color="currentColor"
+                                        size="2.1em"></ph-facebook-logo>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <ph-instagram-logo weight="regular" color="currentColor"
+                                        size="2.1em"></ph-instagram-logo>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box__footer">
+                    <h2>Método de pago</h2>
+                    <ul>
+                        <li><a href="#">
+                                <img class="rounded-4" src="./assets/img/webpay.jpg" alt="webpay">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box__copyright">
+            <p>Copyright © 2023 Destiladero. Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>
